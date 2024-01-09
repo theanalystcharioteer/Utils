@@ -15,4 +15,5 @@
 https://queirozf.com/entries/jupyter-kernels-how-to-add-change-remove
 
 <br>>jupyter kernelspec list
+<br>>ipython kernel install --name "local-venv" --user
 <br>>jupyter kernelspec remove <kernel-name>
