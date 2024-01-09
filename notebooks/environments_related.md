@@ -1,6 +1,6 @@
 # virtual environment
 ```p
-python3.9 venv env_genai
+python3.9 -m venv env_genai
 source env/bin/activate
 ```
 
