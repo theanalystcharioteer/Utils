@@ -35,3 +35,8 @@ ipython kernel install --name "env_genai" --user
 jupyter kernelspec remove env_genai
 ```
 
+# Module error in Jupyter
+## although module exists
+>%pip install tabulate
+<br>and not 
+>%pip install tabulate
