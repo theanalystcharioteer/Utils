@@ -23,6 +23,19 @@ def time_it(func, *args):
         return val
     return call_func
 
+def filterData(df_raw:pd.DataFrame, dict_filter:dict)->pd.DataFrame:
+    '''
+    Filter the data wrt the dict {col: filter_criterion} that is passed.
+    This also includes 'ALL' in the filter.
+    Return back a filtered df.
+    '''
+    df = df_raw.copy()
+    for k, v in dict_filter.items():
+        if v=='ALL':
+            continue
+        filt = (df[k]==v)
+        df = df.loc[filt,:]
+    return df
 
 @time_it
 def write_data_to_file(df, path_filename:str, flag_write=False):
